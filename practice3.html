@@ -1,0 +1,21 @@
+<html>
+<body>
+Password: <input type="password" id="pass1"><br>
+Confirm: <input type="password" id="pass2"><br>
+<button onclick="checkPass()">Check</button>
+
+<script>
+function checkPass() {
+    var p1 = document.getElementById("pass1").value;
+    var p2 = document.getElementById("pass2").value;
+    if (p1.length < 8) {
+        alert("Password must be at least 8 characters.");
+    } else if (p1 !== p2) {
+        alert("Passwords do not match.");
+    } else {
+        alert("Passwords matched!");
+    }
+}
+</script>
+</body>
+</html>

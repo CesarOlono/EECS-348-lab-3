@@ -1,0 +1,23 @@
+<html>
+<head>
+<style>
+#myPara { border-style: solid; border-width: 2px; }
+</style>
+</head>
+<body>
+<p id="myPara">Style me up, and pick some good colors.</p>
+Text Color: <input type="text" id="textColor"><br>
+Border Color: <input type="text" id="borderColor"><br>
+Border Width: <input type="text" id="borderWidth"><br>
+<button onclick="updateStyle()">Update</button>
+
+<script>
+function updateStyle() {
+    var para = document.getElementById("myPara");
+    para.style.color = document.getElementById("textColor").value;
+    para.style.borderColor = document.getElementById("borderColor").value;
+    para.style.borderWidth = document.getElementById("borderWidth").value;
+}
+</script>
+</body>
+</html>
